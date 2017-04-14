@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+
+
+    <script id="articles-template" type="text/x-handlebars-template">
+
+ <div id="articles-template">
+  <h1> {{title}} </h1>
+  <h3>Published On {{publishedOn}}</h3>
+  <h3>Category "{{category}}""</h3>
+<a href="{{authorUrl}}"><h2>{{author}}</h2></a>
+
+{{{body}}}
+
+ </div>
+
+
+
+
+
+    </script>
+
+
     <meta charset="UTF-8">
     <title>Lab 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,14 +61,24 @@
       </nav>
     </header>
     <main>
+
+
+
+
+
+
+</div>
       <section id="articles" class="tab-content">
+
         <div>
           <ul id="filters">
             <li>
               <select id="author-filter">
-                <option value="">-- Filter by Authors --</option>
+                <option value="poop">-- Filter by Authors --</option>
+
               </select>
             </li>
+
             <li>
               <select id="category-filter">
                 <option value="">-- Filter by Categories --</option>
@@ -55,6 +87,10 @@
           </ul>
         </div>
       </section>
+
+
+
+
       <section id="about" class="tab-content">
         <header>
           Welcome to my Blog
@@ -74,9 +110,11 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- TODO: Include Handlebars.JS from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
+
   </body>
 </html>
