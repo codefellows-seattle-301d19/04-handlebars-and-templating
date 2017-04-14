@@ -48,7 +48,7 @@ articleView.handleCategoryFilter = function() {
 };
 
 articleView.handleMainNav = function() {
-  $('.main-nav').on('click', '.tab', function(e) {
+  $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
